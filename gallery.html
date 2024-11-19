@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+        }
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: 0.3s ease;
+        }
+        nav a:hover {
+            background: white;
+            color: #ff7e5f;
+        }
+        section {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="games.html">Games</a>
+        <a href="thankyou.html">Thank You</a>
+    </nav>
+
+    <section>
+        <img src="c:\Users\manav\OneDrive\Pictures\kaaysha1.jpg" alt="Memory 1">
+        <img src="c:\Users\manav\OneDrive\Pictures\kaaysha2.jpg" alt="Memory 2">
+        <img src="c:\Users\manav\OneDrive\Pictures\kaaysha3.jpg" alt="Memory 3">
+    </section>
+</body>
+</html>
