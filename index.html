@@ -141,6 +141,78 @@
             transform: scale(1.1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
+
+        /* Highlights Section */
+        .highlights {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3.5rem;
+            }
+
+            header p {
+                font-size: 1.5rem;
+            }
+
+            .date-container {
+                font-size: 1.2rem;
+            }
+
+            .gallery {
+                padding: 30px 10px;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .highlight-box {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .date-container {
+                font-size: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.4rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            .highlight-box {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -175,7 +247,6 @@ Wishing you the best birthday ever filled with love, laughter, and everything th
     <!-- Image Gallery -->
     <section class="gallery">
         <img src="img/kaaysha1.jpg" alt="Memory 1">
-        
         <img src="img/kaaysha2.jpg" alt="Memory 2">
         <img src="img/kaaysha3.jpg" alt="Memory 3">
     </section>
@@ -189,20 +260,20 @@ Wishing you the best birthday ever filled with love, laughter, and everything th
         document.getElementById('weekday').textContent = weekday;
         document.getElementById('date').textContent = date;
     </script>
-    <section class="highlights" style="display: flex; gap: 20px; padding: 30px; flex-wrap: wrap;">
-        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 15px; padding: 20px; width: 300px;">
+
+    <section class="highlights">
+        <div class="highlight-box">
             <h3>First Talk</h3>
             <p>29 August 2024: The day we started our friendship!</p>
         </div>
-        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 15px; padding: 20px; width: 300px;">
+        <div class="highlight-box">
             <h3>First College Meet</h3>
             <p>7 August 2024: An unforgettable introduction.</p>
         </div>
-        <div style="background: rgba(255, 255, 255, 0.2); border-radius: 15px; padding: 20px; width: 300px;">
+        <div class="highlight-box">
             <h3>First Outing</h3>
             <p>17 November 2024: A day filled with fun and laughter.</p>
         </div>
     </section>
-    
 </body>
 </html>
